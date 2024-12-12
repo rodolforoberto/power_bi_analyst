@@ -49,7 +49,7 @@ https://github.com/julianazanelatto/power_bi_analyst
  
 Bons estudos 😉
 
-#Resposta ao Desafio
+# Resposta ao Desafio
 
 Arquivos em anexo no repositório.
 
