@@ -55,6 +55,8 @@ Bons estudos 😉
 
 [Desafio Analisando dados de um Dashboard de Vendas no Power BI](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%201/Desafio%20Analisando%20dados%20de%20um%20Dashboard%20de%20Vendas%20no%20Power%20BI)
 
+</br>
+
 # Desafio Criando Um Relatório Gerencial de Vendas com Power BI - Módulo 2
 
 Entendendo o Desafio
