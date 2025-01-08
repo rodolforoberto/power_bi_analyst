@@ -111,7 +111,7 @@ Bons estudos 😉
 
 # Resposta ao Desafio
 
-[Desafio Criando Um Relatório Gerencial de Vendas com Power BI](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%202/Desafio%20Criando%20Um%20Relat%C3%B3rio%20Gerencial%20de%20Vendas%20com%20Power%20BI)
+[Desafio Criando Um Relatório Gerencial de Vendas com Power BI](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%202/Desafio%20Criando%20Um%20Relat%C3%B3rio%20Gerencial%20de%20Vendas%20com%20Power%20BI) </br>
 
 # Desafio Criando um Dashboard corporativo com integração com MySQL e Azure - Módulo 3
 
