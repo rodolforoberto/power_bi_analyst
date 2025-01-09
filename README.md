@@ -121,5 +121,80 @@ Bons estudos 😉
 
 </br>
 
+![Relatório Company Constraints](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Company%20Contraints%20Relat%C3%B3rio.png)
+
+</br>
+
+O Desafio do projeto é pegar o banco de dados company_contraints, no github e fazer análise, transformação dos dados e gerar um relatório com o Power BI.
+
+Foi sugerido a criação de uma instância no serviço da Azure da Microsoft, como para realizar o cadastro nesse serviço se faz necessário o uso de cartão de crédito. Não tenho como utilizar esse serviço. Portanto realizei a criação das tabelas e persistência dos dados localmente com o Mysql workbench, utilizando os scripts fornecidos.
+
+Bom, com o banco de dados criado e os dados persistidos localmente, ao obter dados com o Power BI, com o conector instalado e acessando o banco de dados Azure_company do Mysql.
+
+E de acordo com a orientação a ser realizada nos dados de acordo com o desafio, foi realizado os passos a seguir:
+
+1 - Com a transformação dos dados no Power Query, foi analisado os dados e realizada remoção de colunas com os meta dados e colunas que não serão utilizadas. Nome  e tipo de dados foram verificados.
+
+2 - Na tabela employee, a coluna Salary, foi alterada para o tipo Double preciso.
+</br>A coluna Address, foi dividida por Number, Street, City e State com os seus tipos de dados Inteiro, Texto, Texto e Texto.
+</br>A coluna supper_ssn, 2 linhas estavam como null, utilizei abstração, e adicionei “123456789” como gerente.
+</br>
+![Tabela Employee tratada](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Azure_company_employee_tratada.png?raw=true)
+
+3 -  Mescla das colunas da tabela base azure_company_employee, coluna Dno, com a tabela azure_company_department, com a coluna Dnumber.
+</br>
+![Menu de Mescla das Tabelas Employee e Department, coluna Dno e Coluna Dnumber](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/mescla_das_colunas_employee_department.png?raw=true)
+
+</br>
+
+Resultado da Tabela criada com a mescla, com o nome de azure_company employee_department, verifique que a coluna virou FLname, com a junção das colunas Fname e Lname, utilizando o espaço como separador de cada palavra. E a Coluna Department, mostra o nome de cada departamento atrávez da mescla de consulta.
+
+
+![Resultado da Mescla Azure_company_employee_departamento](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Azure_company_employee_department_mescla_FLname_Department_Tratada.png?raw=true)
+
+Imagem a mesma de cima, com o foco no nome do colaborador e Departamento 
+
+![Tabela Nome e Departamento](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Azure_company_employee_department_mescla_FLname_Department.png?raw=true)
+
+4 - Junção dos Nomes dos Colaboradores com os nomes dos gerentes, mescla da tabela azure_company_employee, colunas Supper_ssn  e Ssn
+
+![Menu da mescla tabela employee coluna Super_ssn e ssn](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/azure_company_employee_super_ssn_ssn.png?raw=true)
+
+</br>
+Resultado da mescla das colunas.
+
+![Resultado da mescla tabela employee coluna Super_ssn e ssn](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/azure_company_employee_super_ssn_ssn_resultado.png?raw=true)
+
+</br>
+
+Nome do colaborador e do gerente, com a mescla da consulta foi gerada a coluna e alterado para o nome de manager.
+
+![Nome do colaborador e nome do gerente](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/azure_company_employee_super_ssn_ssn_zoom.png?raw=true)
+
+</br>
+
+5 - Mescla dos nomes do departamento e localização, mescla da tabela azure_company department, coluna Dnumber e azure_company dept_locations, coluna Dnumber
+
+![Menu da mescla entre a tabela azure_company department, coluna Dnumber e azure_company dept_locations, coluna Dnumber.
+](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Azure_company_department_dept_locations_mescla.png?raw=true)
+
+</br>
+Resultado da mescla das tabelas.
+Foi realizado a mescla de colunas pois as duas tabelas tem as mesmas colunas Dnumber, por este motivo não é apropriado utilizar o atribuir.
+
+![Resultado da mescla das tabelas de Department e Dept_locations](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Azure_company_department_dept_locations_mescla_resultado.png?raw=true)
+
+</br>
+
+6 - Agupamento para saber quantos colaboradores existem por gerente
+
+![Agrupamento](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/Agrupamento.png?raw=true)
+
+Resultado
+
+![Resultado do Agrupamento](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/colaborador%20e%20gerente.png?raw=true)
+
+
+
 
 
