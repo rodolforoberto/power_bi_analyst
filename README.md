@@ -194,7 +194,7 @@ Resultado
 
 ![Resultado do Agrupamento](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure/Company%20Constraints/colaborador%20e%20gerente.png?raw=true)
 
-Link dos arquivos desse projeto - [Arquivos Projeto](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%203/Criando%20um%20Dashboard%20corporativo%20com%20integra%C3%A7%C3%A3o%20com%20MySql%20e%20Azure)
+
 
 
 
