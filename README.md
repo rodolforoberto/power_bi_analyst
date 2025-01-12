@@ -226,7 +226,7 @@ Ex: data de oferta das disciplinas, data de oferta dos cursos, entre outros. O f
 
 </br>
 
-# Desafio Modelando um Dashboard de E-commerce com Power BI Utilizando Fórmulas DAX
+# Desafio Modelando um Dashboard de E-commerce com Power BI Utilizando Fórmulas DAX - Módulo 4
 
 Desafio utilizando a tabela de Financial Sample, que é gerada pelo Power BI. Criação das tabelas dimensões e da tabela fatos, em um Star Schema.
 
