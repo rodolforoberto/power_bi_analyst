@@ -224,6 +224,28 @@ Ex: data de oferta das disciplinas, data de oferta dos cursos, entre outros. O f
 # Resposta ao Desafio - Star Schema - Universidade
 ![Resposta ao desafio Star Schema - Universidade](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%204/Star%20Schema%20-%20Universidade/Star%20Schema%20-%20Universidade.png?raw=true)
 
+</br>
+
+# Desafio Modelando um Dashboard de E-commerce com Power BI Utilizando Fórmulas DAX
+
+Desafio utilizando a tabela de Financial Sample, que é gerada pelo Power BI. Criação das tabelas dimensões e da tabela fatos, em um Star Schema.
+
+Star Schema - Financials Sample
+
+São 5 Tabelas Dimensões(D_Produtos_Detalhes, D_Produtos, D_Descontos,D_Detalhes e D_Calendario(Gerada com fórmula DAX) e Tabela Fatos(F_Vendas)
+
+![Star Schema - Flinancial Sample](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%204/Modelando%20um%20Dashboard%20de%20E-commerce%20com%20Power%20BI%20Utilizando%20F%C3%B3rmulas%20DAX/Modelando%20um%20Dashboard%20de%20e-commerce/Star%20Schema%20-%20Financials.png)
+
+</br>
+Tabela Calendario Gerada com Formula DAX
+A Fórmula utilizada foi:  D_Calendario = CALENDAR (DATE(2013,1,1),DATE(2015,1,1))
+
+![Tabela gerada Calendário formula DAX e a formula utilizada](https://github.com/rodolforoberto/power_bi_analyst/blob/main/M%C3%B3dulo%204/Modelando%20um%20Dashboard%20de%20E-commerce%20com%20Power%20BI%20Utilizando%20F%C3%B3rmulas%20DAX/Modelando%20um%20Dashboard%20de%20e-commerce/Tabela%20Calendario%20gerada%20por%20DAX.png?raw=true)
+
+</br>
+
+Arquivo .pbxi e as pngs - [Arquivos](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%204/Modelando%20um%20Dashboard%20de%20E-commerce%20com%20Power%20BI%20Utilizando%20F%C3%B3rmulas%20DAX)
+
 
 
 
