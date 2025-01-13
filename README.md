@@ -246,8 +246,46 @@ A Fórmula utilizada foi:  D_Calendario = CALENDAR (DATE(2013,1,1),DATE(2015,1,1
 
 Arquivo .pbxi e as pngs - [Arquivos](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%204/Modelando%20um%20Dashboard%20de%20E-commerce%20com%20Power%20BI%20Utilizando%20F%C3%B3rmulas%20DAX)
 
+</br>
+
+# Criando um Dashboard Gerencial para Tomada de Decisões Com Power BI - Módulo 5
+
+Desafio de Projeto - Atualizando Relatório Financeiro com Foco na Experiência do Usuário
 
 
+Objetivo do desafio:
+
+Modificar o relatório criativo, o primeiro que criamos juntos, focando na experiência do usuário. Acompanhe o vídeo para que você entenda o que foi feito neste processo. Além disso, leve em consideração os seguintes pontos:
+
+· Posicionamento
+
+· Contraste
+
+· Proporção áurea
+
+· Segmentação dos dados
+
+
+Como comentamos no curso, não é uma regra rígida. Entenda os pontos e cria seu relatório levando os em consideração. Contudo, saiba quando você deve quebrar as regras. Isso vai trazer mais criatividade ao seu relatório. Esses pontos fora da curva deixam seu relatório mais interessante.
+
+
+Próximos passos:
+
+· Insira os botões de navegabilidade
+
+· Modifique a segunda página de forma similar a demostrada no desafio para a primeira página
+
+· Modifique os botões de navegabilidade a fim de destacar o focalizar e selecionar
+
+· Criar os menus de navegabilidade em cada página
+
+· O estilo dos botões é livre!
+
+· O relatório é composto por 3 páginas
+
+# Resposta do Desafio
+
+[Criando um Dashboard Gerencial para Tomada de Decisões Com Power BI](https://github.com/rodolforoberto/power_bi_analyst/tree/main/M%C3%B3dulo%205/Criando%20um%20Dashboard%20Gerencial%20para%20tomada%20de%20Decis%C3%B5es%20com%20Power%20BI)
 
 
 
